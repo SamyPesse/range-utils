@@ -14,21 +14,30 @@ $ npm install range-utils
 
 ### Usage
 
-Ranges are standard JavaScript objects, but the `Range` constructor can be use to initialize a range:
 
 ```js
+// Initialize a range
+
 var from0To10 = Range(0, 10);
 var from5To20 = Range(5, 15);
 var withProperty = Range(0, 10, { hello: 'world' });
-```
 
-##### Collapsing Ranges
+// Check if a range contains another range
+Range.contains(
+    Range(0, 10),
+    Range(5, 2)
+);
 
-Test if two ranges are collapsing:
+// Check that two ranges are collapsing
+Range.areCollapsing(
+    Range(0, 10),
+    Range(9, 10)
+);
 
-```js
-if (Range.areCollapsing(a, b)) {
-    ...
-}
+// Translate a range
+Range.moveBy(a, 10);
+
+// Enlarge a range
+Range.enlarge(a, 10);
 ```
 
