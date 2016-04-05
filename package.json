@@ -1,0 +1,28 @@
+{
+  "name": "range-utils",
+  "version": "0.0.0",
+  "description": "Utilities to manipulate ranges",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "export TESTING=true; mocha --reporter spec --bail"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SamyPesse/range-utils.git"
+  },
+  "author": "Samy Pesse <samypesse@gmail.com>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/SamyPesse/range-utils/issues"
+  },
+  "homepage": "https://github.com/SamyPesse/range-utils#readme",
+  "devDependencies": {
+    "mocha": "^2.4.5",
+    "should": "^8.2.2"
+  },
+  "dependencies": {
+    "extend": "^3.0.0",
+    "immutable": "^3.7.6",
+    "is": "^3.1.0"
+  }
+}
