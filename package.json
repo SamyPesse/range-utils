@@ -1,6 +1,6 @@
 {
   "name": "range-utils",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Utilities to manipulate ranges",
   "main": "lib/index.js",
   "scripts": {
